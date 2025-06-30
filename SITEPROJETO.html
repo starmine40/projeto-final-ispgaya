@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Rúben Oliveira</title>
+    <style>
+        :root {
+            --primary-color: #cc0033;
+            --primary-dark: #990025;
+            --background: #f9f9f9;
+            --text: #333;
+            --card-bg: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .projects {
+            padding: 3rem 1.5rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .preview-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .preview-card {
+            position: relative;
+            cursor: pointer;
+            width: 100%;
+            max-width: 1000px;
+            padding: 0;
+            overflow: hidden;
+            border-left: 5px solid var(--primary-color);
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .preview-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+.preview-card-link {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+        .preview-card iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            pointer-events: none;
+            display: block;
+        }
+
+        .preview-content {
+            padding: 1.5rem;
+        }
+
+        .preview-card h3 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+
+        .preview-card p {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.9rem 1.8rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .preview-card iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rúben Oliveira</h1>
+    <p>.NET FullStack Software Developer</p>
+    <p style="max-width: 700px; margin: 1rem auto 0; font-size: 1rem; line-height: 1.6;">
+        Tenho cerca de 4 anos de experiência na área de desenvolvimento de software e trabalho há mais de 3 anos no ISQ, onde desenvolvi também o meu projeto de final de curso.
+        Tenho sólida experiência com a framework .NET, utilizando VB.NET, C# e SQL Server. Atualmente, sou responsável por projetos estratégicos como a digitalização do ISQ Espanha (incluindo algumas deslocações aos escritórios de Madrid), o desenvolvimento da plataforma interna ISQ Manager, bem como o suporte às operações tecnológicas de todo o ISQ Portugal e a criação da nova loja online da empresa.
+        Adicionalmente, tenho experiência na certificação de software de faturação junto da Autoridade Tributária, garantindo a emissão legal de documentos fiscais e ficheiros SAF-T. Desenvolvi também soluções de gestão nas áreas clínica, industrial, de formação e vendas.
+    </p>
+</header>
+
+    <section class="projects">
+        <h2 style="text-align:center; color: #222; margin-bottom: 2rem;">Projeto de 
+Engenharia Informática em Contexto Empresarial</h2>
+        
+<div class="preview-wrapper">
+    <div class="preview-card-link" onclick="window.open('https://lojaonline.isq.pt/', '_blank')">
+        <div class="preview-card">
+            <div class="preview-content">
+                <h3>Nova Loja Online ISQ</h3>
+                <p>Clique para abrir o site completo.</p>
+            </div>
+            <iframe src="https://lojaonline.isq.pt/" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+        <div style="text-align: center;">
+            <a href="relatorio.pdf" class="download-button" download>📄 Download do relatório do projeto</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rúben Oliveira</p>
+    </footer>
+
+</body>
+</html>
+
